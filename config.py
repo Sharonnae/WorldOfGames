@@ -24,6 +24,4 @@ currency_roulette_game = "CURRENCY ROULETTE GAME"
 raise_errors = ["Something went wrong, can't load the selected game."]
 
 enter = "Press enter to start the game."
-<<<<<<< HEAD
-nhgnhgnghng
-nbnhgnhgn
+
