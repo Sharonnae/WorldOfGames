@@ -3,7 +3,11 @@ from utils import SCORES_FILE_NAME, BAD_RETURN_CODE
 
 
 def calculate_points(difficulty):
+<<<<<<< HEAD
     return (difficulty * 3) + 5
+=======
+     return (difficulty * 3) + 5
+>>>>>>> master
 
 
 def read_score():
@@ -27,3 +31,8 @@ def update_score_file(difficulty):
             score_file.write(str(points))
     else:
         print("Failed to read score, new points will not be added")
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
