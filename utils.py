@@ -3,6 +3,10 @@ from config import selection_errors
 import requests
 
 
+SCORES_FILE_NAME = "scores.txt"
+BAD_RETURN_CODE = -1
+
+
 def is_in_range(value, min_val, max_val):
     if min_val <= value < max_val:
         return True
