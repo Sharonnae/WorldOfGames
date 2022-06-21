@@ -4,6 +4,7 @@ import config
 from MemoryGame import play as memory_game
 from GuessGame import play as guess_game
 from CurrencyRouletteGame import play as currency_roulette_game
+from Score import update_score_file
 
 
 def welcome(name):
@@ -23,13 +24,16 @@ def load_game():
     utils.clear()
 
     if game_selection[0] == 1:
-        return memory_game(difficulty_level_selection[0])
+        score = memory_game(difficulty_level_selection[0])
 
     elif game_selection[0] == 2:
-        return guess_game(difficulty_level_selection[0])
+        score = guess_game(difficulty_level_selection[0])
 
     elif game_selection[0] == 3:
-        return currency_roulette_game(difficulty_level_selection[0])
+        score = currency_roulette_game(difficulty_level_selection[0])
 
     else:
         raise(config.raise_errors[0])
+
+    if score is True:
+        update_score_file(difficulty_level_selection[0])
