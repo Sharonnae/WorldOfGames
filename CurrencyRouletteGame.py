@@ -28,4 +28,4 @@ def play(difficulty):
     interval = list(get_money_interval(difficulty, ils_amount))
     guess = get_guess_from_user(usd_amount)
     # bug - calculation is wrong. need to debug.
-    return interval[0] <= guess <= interval[1]
+    return interval[0]<=guess<=interval[1]
